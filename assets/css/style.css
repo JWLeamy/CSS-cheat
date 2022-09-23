@@ -3,10 +3,11 @@
     --code-background: blue, lightblue;
     --border-color: aqua; 
     --code-color: white;
-    --background: tan;
+    --background: antiquewhite;
     --card-margin-value: 2%;
     --card-border-radius: 30px 30px;
     --card-border-no-radius: 0px 0px;
+    --footer-color: black;
 }
 
 body {
@@ -20,6 +21,8 @@ header {
 main {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -28,6 +31,10 @@ main {
     border-style: dotted;
     margin: 2%;
     border-radius: var(--card-border-radius) var(--card-border-radius);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    transition: all 2s ease-in-out;
 
 }
 .card p {
@@ -45,22 +52,28 @@ main {
 
 
 .code {
-    display: relative;
+    display: block;
     background-image: linear-gradient(var(--code-background));
     color:var(--code-color);
     margin: var(--card-margin-value);
     border-radius: var(--card-border-no-radius) var(--card-border-radius);
 }
 
+footer {
+    text-align: center;
+    color: var(--footer-color)
+}
 
 @media screen and (max-width: 992px) {
     .card{
         width: 50%;
+        transition: all 2s ease-in-out;
     }
 }
 
 @media screen and (max-width: 768px) {
     .card{
         width: 100%;
+        transition: all 2s ease-in-out 0;
     }
 }
