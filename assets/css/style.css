@@ -23,6 +23,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    transition: all 2s ease-in-out;
 }
 
 .card {
@@ -33,9 +34,12 @@ main {
     border-radius: var(--card-border-radius) var(--card-border-radius);
     justify-content: space-evenly;
     justify-items: center;
-    align-items: center;
     transition: all 2s ease-in-out;
+}
 
+.card:hover {
+    border-style: bold;
+    background-color: gold;
 }
 .card p {
     margin: var(--card-margin-value);
