@@ -1,0 +1,41 @@
+:root {
+    --title-color: blue;
+    --code-background: blue, lightblue;
+    --border-color: aqua; 
+    --code-color: white;
+    --background: tan;
+}
+
+body {
+background-color: var(--background);
+}
+
+header {    
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 0 0;
+    border-style: dotted;
+    margin: 2%;
+
+}
+
+.title {
+    padding: 1px;
+    background-image: linear-gradient(var(--code-background));
+    color: var(--title-color) ;
+    border-style: solid;
+    border-color: var(--border-color);
+}
+
+.code {
+    background-image: linear-gradient(var(--code-background));
+    color:var(--code-color)
+    
+}
