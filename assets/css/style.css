@@ -57,6 +57,7 @@ main {
     color:var(--code-color);
     margin: var(--card-margin-value);
     border-radius: var(--card-border-no-radius) var(--card-border-radius);
+    user-select: all;
 }
 
 footer {
