@@ -40,9 +40,15 @@ main {
 .card:hover {
     border-style: bold;
     background-color: gold;
+    font-weight: bold;
 }
 .card p {
     margin: var(--card-margin-value);
+}
+
+.card p:hover {
+    color: purple;
+    font-weight: bold;
 }
 
 .title {
